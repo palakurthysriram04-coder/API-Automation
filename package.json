@@ -1,0 +1,18 @@
+{
+  "name": "playwright-api-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API automation framework for platform and app flows using Playwright and TypeScript",
+  "scripts": {
+    "test:api": "playwright test --config=playwright.api.config.ts --project api",
+    "test:ui": "playwright test --config=playwright.api.config.ts --project ui",
+    "test:all": "playwright test --config=playwright.api.config.ts",
+    "allure:serve": "allure serve allure-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "allure-playwright": "^2.15.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.4"
+  }
+}
